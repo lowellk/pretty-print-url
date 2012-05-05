@@ -20,13 +20,15 @@ def pretty_print_url(url_string):
     print 'fragment: %s' % parsed.fragment
     print 'query:'
 
-    query_keys = [len(key) for key in query.keys()]
-    if query_keys:
-        max_key_len = max(query_keys)
-        for k, v in query.items():
-            if len(v) is 1:
-                v = v[0]
-            print '  %s: %s' % (k.ljust(max_key_len), v)
+    keys = query.keys()
+    if keys:
+        keys.sort()
+        max_key_len = max([len(key) for key in keys])
+        for key in keys:
+            value = query[key]
+            if len(value) is 1:
+                value = value[0]
+            print '  %s: %s' % (key.ljust(max_key_len), value)
 
 if __name__ == '__main__':
     if len(sys.argv) is not 2:
