@@ -18,11 +18,11 @@ def pretty_print_url(url_string):
     print 'path:     %s' % parsed.path
     print 'params:   %s' % parsed.params
     print 'fragment: %s' % parsed.fragment
+    print 'query:'
 
     query_keys = [len(key) for key in query.keys()]
     if query_keys:
         max_key_len = max(query_keys)
-        print 'query:'
         for k, v in query.items():
             if len(v) is 1:
                 v = v[0]
