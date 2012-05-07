@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Pretty-print-url : Command line tool to pretty print urls" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Pretty-print-url</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/lowellk/pretty-print-url">View on GitHub</a>
+
+          <h1 id="project_title">Pretty-print-url</h1>
+          <h2 id="project_tagline">Command line tool to pretty print urls</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/lowellk/pretty-print-url/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/lowellk/pretty-print-url/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Example</h1>
+
+<p>When you type:</p>
+
+<pre><code>$ pretty-print-url.py "http://maps.google.com/maps?saddr=Jack+London+Square,+Oakland,+CA&amp;daddr=downtown,+sf&amp;hl=en&amp;sll=37.797034,-122.346153&amp;sspn=0.281598,0.288391&amp;geocode=FZOyQAIdHzW2-CFarnWbBB33kQ%3BFVJmQAIdKAe0-CkhAGkAbZqFgDH_rXbwZxNQSg&amp;oq=jack+lon&amp;mra=ls&amp;t=m&amp;z=12"
+</code></pre>
+
+<p>You will be shown:</p>
+
+<pre><code>scheme:   http
+hostname: maps.google.com
+port:     
+path:     /maps
+params:   
+fragment: 
+query:
+  sspn   : 0.281598,0.288391
+  sll    : 37.797034,-122.346153
+  daddr  : downtown, sf
+  geocode: FZOyQAIdHzW2-CFarnWbBB33kQ;FVJmQAIdKAe0-CkhAGkAbZqFgDH_rXbwZxNQSg
+  t      : m
+  hl     : en
+  saddr  : Jack London Square, Oakland, CA
+  z      : 12
+  mra    : ls
+  oq     : jack lon
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Pretty-print-url maintained by <a href="https://github.com/lowellk">lowellk</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
